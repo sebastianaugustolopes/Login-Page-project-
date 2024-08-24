@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    padding: 35px 30px;
+    border-radius: 20px;
+}
+
+.left-login {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 30px;
+}
+
+.textfield {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.textfield > input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid gray;
+    outline: none;
+    font-size: 12pt;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    display: none;
+    margin: 0;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgb(57, 57, 244);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    font-size: 10pt;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: rgb(81, 84, 249);
+    transition: 0.5s;
+}
+
+.left-login > h1, .left-login > p {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.left-login > p {
+    margin-bottom: 10px;
+}
+
+.right-login {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.social-icons {
+    display: flex;
+    margin: auto;
+}
+
+.social-icons img {
+    width: 50%;
+    height: 30px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 666px) {
+    .right-login > img {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        align-items: center; /* Centraliza o conteúdo */
+    }
+
+    .textfield {
+        width: 80%;
+        margin: 5px auto; /* Centraliza e dá mais espaço entre os campos */
+    }
+
+    .textfield > input{
+        max-width: 100%;
+        padding: 10px;
+        font-size: 9pt;
+    }
+
+    .btn-login {
+        width: 80%;
+        margin: 5px 0; /* Espaço adicional para melhor toque no celular */
+        padding: 10px;
+        font-size: 9pt;
+        margin-bottom: 10px;
+        
+    }
+
+    .card-login {
+        width: 90%; /* Aumenta a largura da carta para mais espaço */
+        flex-direction: column;
+        padding: 20px; /* Reduz o padding para melhor uso do espaço */
+        box-shadow: none;
+    }
+
+    .left-login p{
+        font-size: 9pt;
+        margin-top: 2px;
+    }
+
+    h1{
+        font-size:x-large;
+        
+    }
+}
